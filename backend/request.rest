@@ -1,0 +1,26 @@
+### Get All Users
+GET http://localhost:5000/users
+
+### Get Single User by ID
+GET http://localhost:5000/users/1
+
+### Create New User
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john@mail.com",
+    "gender": "Male"
+}
+
+### Update User
+PUT http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "name": "John Doe Update"
+}
+
+### Delete User
+DELETE http://localhost:5000/users/2
